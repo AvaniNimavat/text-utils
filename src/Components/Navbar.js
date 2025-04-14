@@ -8,17 +8,17 @@ export default function Navbar(props) {
    
       <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">{props.title}</a>
+          <a className="navbar-brand" href="#">{props.title}</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                <a className="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">{props.about}</a>
+                <a className="nav-link" href="#">{props.about}</a>
               </li>
 
             </ul>
@@ -27,6 +27,7 @@ export default function Navbar(props) {
            
             <button className="bg-danger" onClick={()=>props.changeTheme("Red")} style={{width: 20 ,height: 25}} ></button>
             <button className="bg-success" onClick={()=>props.changeTheme("Green")} style={{width: 20 ,height: 25}} ></button>
+            <button className="bg-warning"  style={{width: 20 ,height: 25}} ></button>
             </div>
             <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
               <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.toggleMode} />
