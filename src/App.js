@@ -14,7 +14,7 @@ function App() {
     
     "Default":  {
         themeName: "Default",
-        foreColor: "black",
+        foreColor: "#0951bb",
         backColor: "white"
       },
      "Red": {

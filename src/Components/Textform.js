@@ -54,7 +54,7 @@ export default function Textform(props) {
                 if(element.trim() !== '')
                 {
                     i++;
-                    console.log(i);
+                    console.log(i); 
                     
                 }
             });
